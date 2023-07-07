@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!--名字是showIllum-->
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #illumTable{
+            width: 80%;
+            border: 1px solid green;
+            margin: 0px auto;
+        }
+        #illumTable th,td{
+            border: 1px solid green;
+            text-align: center;
+        }
+
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: gainsboro">
+
+
+
+
+<h2 th:text="光照强度实时数据"></h2>
+
+<table id="illumTable" >
+    <tr>
+        <th>id</th>
+        <th>农田类型</th>
+        <th>农田地址</th>
+        <th>时间</th>
+        <th>光照强度/*10^4Lux</th>
+    </tr>
+    <tr th:each="illum:${illumList}">
+        <th th:text="${illum.id}"></th>
+        <th th:text="${illum.farmlandType}"></th>
+        <th th:text="${illum.location}"></th>
+        <th th:text="${illum.time}"></th>
+        <th th:text="${illum.illumination}"></th>
+    </tr>
+
+
+
+
+</table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #airHumiTable{
+            width: 80%;
+            border: 1px solid green;
+            margin: 0px auto;
+        }
+        #airHumiTable th,td{
+            border: 1px solid green;
+            text-align: center;
+        }
+
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: gainsboro">
+
+
+
+
+<h2 th:text="空气湿度实时数据"></h2>
+
+<table id="airHumiTable" >
+    <tr>
+        <th>id</th>
+        <th>农田类型</th>
+        <th>农田地址</th>
+        <th>时间</th>
+        <th>空气湿度/%rh</th>
+    </tr>
+    <tr th:each="airHumi:${airHumiList}">
+        <th th:text="${airHumi.id}"></th>
+        <th th:text="${airHumi.farmlandType}"></th>
+        <th th:text="${airHumi.location}"></th>
+        <th th:text="${airHumi.time}"></th>
+        <th th:text="${airHumi.airHumidity}"></th>
+    </tr>
+
+
+
+
+</table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>首页</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="http://www.ylcp.shop/files/files/1649402480106/xy_favicon.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
+    .ui-navbar li:last-child .ui-btn {
+    margin-right: 0!important;
+    }
+
+    .banner {
+    width: 100%;
+    }
+
+    .banner img {
+    width: 100%;
+    height: 18.75rem;
+    }
+
+    .sv_nav a img {
+    background: none!important;
+    }
+
+    .sv_nav a {
+    border: 0;
+    }
+
+    .container {
+    background-color: #f5f5f5;
+    }
+
+    #myPanel {
+    margin-top: 3.5625rem;
+    width: 20%;
+    }
+
+    .news .row {
+    cursor: pointer;
+    }
+
+
+    /* 提交按钮 */
+
+    .bk_sb {
+    margin: 0;
+    min-height: 2.2em;
+    border: 0;
+    padding: .4em;
+    line-height: 1.4em;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+    text-align: center;
+    border-color: #ddd;
+    }
+
+    @media screen and (max-width:768px) {
+    .container {
+    max-width: 46.875rem;
+    }
+    .banner {
+    width: 100%;
+    }
+    .banner img {
+    width: 100%;
+    height: 18.75rem;
+    }
+    .sv_nav a img {
+    background: none!important;
+    }
+    .sv_nav a {
+    border: 0;
+    }
+    .sv_lt {
+    border: 0;
+    }
+    }
+
+
+    /* ipad端 */
+
+    @media screen and (min-width:768px) {
+    .container {
+    width: 46.875rem;
+    margin: auto;
+    }
+    .banner {
+    width: 100%;
+    }
+    .banner img {
+    width: 100%;
+    height: 18.75rem;
+    }
+    .sv_nav a img {
+    background: none!important;
+    }
+    .sv_nav a {
+    border: 0;
+    }
+    .sv_lt {
+    border: 0;
+    }
+    }
+
+
+    /* 导航PC端 */
+
+    @media screen and (min-width:992px) {
+    .container {
+    width: 60.625rem;
+    margin: auto;
+    }
+    .main {
+    width: 100%;
+    margin-right: .9375rem;
+    margin: auto;
+    }
+    .row {
+    margin-left: -0.9375rem;
+    margin-right: 0;
+    }
+    /* 焦点图 */
+    .banner {
+    width: 100%;
+    height: 18.75rem;
+    padding-right: 0;
+    /* padding-left: 0; */
+    }
+    .banner img {
+    width: 100%;
+    height: 18.75rem;
+    }
+    /* 服务导航 */
+    .sv_nav {
+    display: flex;
+    margin: 0;
+    }
+    .sv_nav .sv_lt {
+    float: left;
+    padding-left: 0;
+    }
+    .sv_nav .sv_lt a {
+    flex: 1;
+    width: 9.875rem;
+    display: block;
+    border: 0;
+    /* background-color: #fff!important; */
+    }
+    .sv_nav a img {
+    max-width: 6.25rem;
+    min-height: 6.25rem;
+    margin-top: .3125rem;
+    background: none!important;
+    }
+    .vip img {
+    width: 6.25rem;
+    height: 6.25rem;
+    margin-left: 3.75rem;
+    }
+    .news {
+    margin-top: .9375rem;
+    }
+    .news .row {
+    display: block;
+    width: 100%;
+    height: 12.1875rem;
+    }
+    .news h3 {
+    margin-top: 1.875rem;
+    }
+    .news img {
+    height: 12.5rem;
+    }
+    }
+
+
+
+</head>
+
+<body>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<div class="container">
+    <!-- 导航 -->
+    <div data-role="header">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="" data-ajax="false" class="ui-icon-home ui-btn-icon-top"><span class="hidden-xs">首页</span></a></li>
+                <li><a href="food.html" data-ajax="false" class="ui-icon-heart ui-btn-icon-top"><span class="hidden-xs">美食</span></a></li>
+                <li><a href="spor.html" data-ajax="false" class="ui-icon-location ui-btn-icon-top"><span class="hidden-xs">景区</span></a></li>
+                <li><a href="culture.html" data-ajax="false" class="ui-icon-refresh ui-btn-icon-top"><span class="hidden-xs">文化</span></a></li>
+                <li><a href="contact.html" data-ajax="false" class="ui-icon-mail ui-btn-icon-top ui-btn ui-btn-inline ui-corner-all ui-shadow" style="margin-right: 0;"><span class="hidden-xs">信息登记</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 主体 -->
+
+    <div class="main">
+
+        <div class="row">
+            <div class="banner col-md-1 col-sm-1 col-xs-1">
+                <img src="picture/banner.jpeg" alt="" class=" visible-lg visible-md">
+                <!-- <p class="hidden-lg hidden-md min">闽乡之都</p> -->
+            </div>
+        </div>
+        <!-- 服务导航 -->
+        <div class="row sv_nav clearfix" data-role="controlgroup" data-type="horizontal">
+            <!-- 购票 -->
+            <div class="sv_lt col-md-2 col-sm-2 col-xs-2">
+                <a href="#book" data-icon="info" data-rel="popup" data-transition="flip" class="ui-btn ui-btn-inline ui-corner-all" data-role="button"><img src="picture/book.jpg" alt="" class="img-thumbnail">
+                    <p class="text-muted">购票</p>
+                </a>
+                <div data-role="popup" id="book" class="ui-content" data-overlay-theme="b" data-dismissible="false">
+                    <div data-role="header">
+                        <h1>莆田购票务</h1>
+                    </div>
+                    <div data-role="main" class="ui-content">
+                        <form method="post" action="#">
+                            <label for="time">发车日期:</label>
+                            <input type="date" name="time" id="time">
+                            <label for="site">起止站点:</label>
+                            <input type="text" name="site" id="site">
+                            <label for="money">单张票价:</label>
+                            <input type="text" name="money" id="money">
+                            <label for="fname">姓名:</label>
+                            <input type="text" name="fname" id="fname">
+                            <label for="phone">电话:</label>
+                            <input type="text" name="phone" id="phone">
+                            <label for="id">身份证件</label>
+                            <input type="text" name="id" id="id">
+                            <input type="button" data-inline="true" value="提交" class="bk_sb">
+                        </form>
+                    </div>
+                    <div data-role="footer">
+                        <h1>莆田购票务系统</h1>
+                    </div>
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-right ui-btn-icon-notext"></a>
+                </div>
+            </div>
+            <!-- 旅馆 -->
+            <div class="sv_lt col-md-2 col-sm-2 col-xs-2">
+                <a href="#hotel" data-icon="info" data-rel="popup" data-transition="flip" class="ui-btn ui-btn-inline ui-corner-all" data-role="button"><img src="picture/hotel.jpg" alt="" class="img-thumbnail">
+                    <p class="text-muted">旅馆</p>
+                </a>
+                <div data-role="popup" id="hotel" class="ui-content" data-overlay-theme="b" data-dismissible="false">
+                    <div data-role="header">
+                        <h1>订房</h1>
+                    </div>
+                    <div data-role="main" class="ui-content">
+                        <form method="post" action="#">
+                            <label for="startime">开始住宿:</label>
+                            <input type="date" name="startime" id="startime">
+                            <label for="endtime">结束住宿:</label>
+                            <input type="date" name="endtime" id="endtime">
+                            <label for="room">房间号:</label>
+                            <input type="text" name="room" id="room">
+                            <label for="fname">姓名:</label>
+                            <input type="text" name="fname" id="fname">
+                            <label for="phone">电话:</label>
+                            <input type="text" name="phone" id="phone">
+                            <label for="id">身份证件</label>
+                            <input type="text" name="id" id="id">
+                            <input type="button" data-inline="true" value="提交" class="bk_sb">
+                        </form>
+                    </div>
+                    <div data-role="footer">
+                        <h1>订房系统</h1>
+                    </div>
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-right ui-btn-icon-notext"></a>
+                </div>
+            </div>
+            <!-- 导游 -->
+            <div class="sv_lt col-md-2 col-sm-2 col-xs-2">
+                <a href="#tour_guide" data-icon="info" data-rel="popup" data-transition="flip" class="ui-btn ui-btn-inline ui-corner-all" data-role="button"><img src="picture/tour_guide.png" alt="" class="img-thumbnail">
+                    <p class="text-muted">导游</p>
+                </a>
+                <div data-role="popup" id="tour_guide" class="ui-content" data-overlay-theme="b" data-dismissible="false">
+                    <div data-role="header">
+                        <h1>导游</h1>
+                    </div>
+                    <div data-role="main" class="ui-content">
+                        <form method="post" action="#">
+                            <label for="startime">开始时间:</label>
+                            <input type="date" name="startime" id="startime">
+                            <label for="endtime">结束时间:</label>
+                            <input type="date" name="endtime" id="endtime">
+                            <label for="tour_guide">选择导游:</label>
+                            <div class="ui-field-contain">
+                                <select name="select-native-1" id="select-native-1" data-iconpos="left">
+                                    <option value="1">请选择导游</option>
+                                    <option value="2">李导</option>
+                                    <option value="3">陈导</option>
+                                    <option value="4">张导</option>
+                                </select>
+                            </div>
+                            <label for="fname">姓名:</label>
+                            <input type="text" name="fname" id="fname">
+                            <label for="phone">电话:</label>
+                            <input type="text" name="phone" id="phone">
+                            <input type="button" data-inline="true" value="提交" class="bk_sb">
+                        </form>
+                    </div>
+                    <div data-role="footer">
+                        <h1>导游系统</h1>
+                    </div>
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-right ui-btn-icon-notext"></a>
+                </div>
+            </div>
+            <!-- 购物 -->
+            <div class="sv_lt col-md-2 col-sm-2 col-xs-2">
+                <a href="#shop" data-icon="info" data-rel="popup" data-transition="flip" class="ui-btn ui-btn-inline ui-corner-all" data-role="button"><img src="picture/shop.jpg" alt="" class="img-thumbnail">
+                    <p class="text-muted">购物</p>
+                </a>
+                <div data-role="popup" id="shop" class="ui-content" data-overlay-theme="b" data-dismissible="false">
+                    <div data-role="header">
+                        <h1>购物</h1>
+                    </div>
+                    <div data-role="main" class="ui-content">
+                        <form method="post" action="#">
+                            <label for="fname">姓名:</label>
+                            <input type="text" name="fname" id="fname">
+                            <label for="phone">电话:</label>
+                            <input type="text" name="phone" id="phone">
+                            <label>菜类</label>
+                            <div class="ui-field-contain">
+                                <select name="select-native-1" id="select-native-1" data-iconpos="left">
+                                    <option value="1">请选择菜品</option>
+                                    <option value="2">包菜</option>
+                                    <option value="3">西红柿</option>
+                                    <option value="4">青菜</option>
+                                </select>
+                            </div>
+                            <label for="map">配送地址:</label>
+                            <input type="text" name="map" id="map">
+                            <input type="button" data-inline="true" value="提交" class="bk_sb">
+                        </form>
+                    </div>
+                    <div data-role="footer">
+                        <h1>购物系统</h1>
+                    </div>
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-right ui-btn-icon-notext"></a>
+                </div>
+            </div>
+            <!-- 外卖 -->
+            <div class="sv_lt col-md-2 col-sm-2 col-xs-2">
+                <a href="#take_out" data-icon="info" data-rel="popup" data-transition="flip" class="ui-btn ui-btn-inline ui-corner-all" data-role="button"><img src="picture/take_out.png" alt="" class="img-thumbnail">
+                    <p class="text-muted">外卖</p>
+                </a>
+                <div data-role="popup" id="take_out" class="ui-content" data-overlay-theme="b" data-dismissible="false">
+                    <div data-role="header">
+                        <h1>外卖</h1>
+                    </div>
+                    <div data-role="main" class="ui-content">
+                        <form method="post" action="#">
+                            <label for="room">房间号:</label>
+                            <input type="text" name="room" id="room">
+                            <label for="fname">姓名:</label>
+                            <input type="text" name="fname" id="fname">
+                            <label for="phone">电话:</label>
+                            <input type="text" name="phone" id="phone">
+                            <label>美食</label>
+                            <div class="ui-field-contain">
+                                <select name="select-native-1" id="select-native-1" data-iconpos="left">
+                                    <option value="1">请选择菜品</option>
+                                    <option value="2">汉堡</option>
+                                    <option value="3">可乐</option>
+                                    <option value="4">卷</option>
+                                </select>
+                            </div>
+                            <label for="map">配送地址:</label>
+                            <input type="text" name="map" id="map">
+                            <input type="button" data-inline="true" value="提交" class="bk_sb">
+
+                        </form>
+                    </div>
+                    <div data-role="footer">
+                        <h1>外卖系统</h1>
+                    </div>
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-right ui-btn-icon-notext"></a>
+                </div>
+            </div>
+            <!-- vip -->
+            <div class="sv_lt col-md-2 col-sm-2 col-xs-2">
+                <a href="#vip" data-icon="info" data-rel="popup" data-transition="flip" class="ui-btn ui-btn-inline ui-corner-all" data-role="button"><img src="picture/vip.png" alt="" class="img-thumbnail">
+                    <p class="text-muted">vip</p>
+                </a>
+                <div data-role="popup" id="vip" class="ui-content" data-overlay-theme="b" data-dismissible="false">
+                    <div data-role="header">
+                        <h1>vip</h1>
+                    </div>
+                    <div data-role="main" class="ui-content vip">
+                        <form method="post" action="#">
+                            <img src="picture/vip.png" alt="" class="img-thumbnail">
+                            <label>开通时长</label>
+                            <div class="ui-field-contain">
+                                <select name="select-native-1" id="select-native-1" data-iconpos="left">
+                                    <option value="1">请选择时长</option>
+                                    <option value="2">1个月/30元</option>
+                                    <option value="3">3个月/90元</option>
+                                    <option value="4">12个月/360元</option>
+                                </select>
+                            </div>
+                            <label for="phone">电话:</label>
+                            <input type="text" name="phone" id="phone">
+                            <input type="button" data-inline="true" value="提交" class="bk_sb">
+                        </form>
+                    </div>
+                    <div data-role="footer">
+                        <h1>开通VIP服务</h1>
+                    </div>
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-delete ui-btn-right ui-btn-icon-notext"></a>
+                </div>
+            </div>
+        </div>
+        <!-- 新闻 -->
+        <div class="news">
+            <a class="row">
+                <div class="col-md-9">
+                    <h3>翡翠妈祖安座古田天后宫</h3>
+                    <p class="text-muted">2020-12-15 09:25 莆田网
+                    </p>
+                    <p class="text-info hidden-xs">这尊翡翠妈祖，由中华妈祖文化交流协会副会长、上海玉成天赐有限责任公司董事长赵柳成先生捐赠。中华妈祖文化交流协会副会长、湄洲妈祖祖庙董事长林金赞到古田天后宫安排分灵安座有关信俗事宜。</p>
+                    <p class="text-muted">湄洲日报 苏丽彬</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="picture/later.jpeg" alt="" class="img-thumbnail hidden-sm hidden-xs">
+                </div>
+            </a>
+            <a class="row">
+                <div class="col-md-9">
+                    <h3>莆田文峰宫为贫困大学生颁发助学金</h3>
+                    <p class="text-muted">2020-12-15 09:25 莆田网
+
+                    </p>
+                    <p class="text-info hidden-xs">莆田网讯 12月8日，莆田文峰天后宫董事长陈鹭玲走进莆田学院，为该院17名品学兼优的家庭经济困难学生颁发“2020-2021学年文峰天后宫助学金”，每人获助2000元，共计34000元。这是2015年以来莆田文峰天后宫连续第6年为该学院学生颁发助学金。</p>
+                    <p class="text-muted">湄洲日报记者 郑已东</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="picture/wenfeng.jpg" alt="" class="img-thumbnail hidden-sm hidden-xs">
+                </div>
+            </a>
+            <a class="row">
+                <div class="col-md-9">
+                    <h3>跨越海峡两岸的妈祖情缘</h3>
+                    <p class="text-muted">2020-12-15 09:24 莆田网
+
+                    </p>
+                    <p class="text-info hidden-xs">自两岸开放探亲以来，台湾妈祖分灵庙源源不断地组团来湄洲妈祖祖庙谒祖进香，掀起天下妈祖回娘家的热潮。这份起始于乡愁，寄托于妈祖的“火热情感”并没有随时间冷却，反而在时光轮转中愈发凝实，蕴藏着冲破时间和空间的力量，几十年一直如此。</p>
+                    <p class="text-muted">湄洲日报 周建国 文/图</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="picture/love.jpg" alt="" class="img-thumbnail hidden-sm hidden-xs">
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<div data-role="footer">
+    <h1>版权©**</h1>
+</div>
+</body>
+
+</html>
+
+
+

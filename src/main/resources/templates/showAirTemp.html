@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #airTempTable{
+            width: 80%;
+            border: 1px solid green;
+            margin: 0px auto;
+        }
+        #airTempTable th,td{
+            border: 1px solid green;
+            text-align: center;
+        }
+
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: gainsboro">
+
+
+
+
+<h2 th:text="空气温度实时数据"></h2>
+
+<table th:id="airTempTable">
+    <tr>
+        <th>id</th>
+        <th>农田类型</th>
+        <th>农田地址</th>
+        <th>时间</th>
+        <th>空气温度/℃</th>
+    </tr>
+    <tr th:each="airTemp:${airTempList}">
+        <th th:text="${airTemp.id}"></th>
+        <th th:text="${airTemp.farmlandType}"></th>
+        <th th:text="${airTemp.location}"></th>
+        <th th:text="${airTemp.time}"></th>
+        <th th:text="${airTemp.airTemperature}"></th>
+    </tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head >
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body{
+
+            background: url('https://www.eyin.cn/uploads/img1/20180820/5b7a6f5529757.jpg') no-repeat;
+            background-size: 100% 90%;
+
+        }
+
+        #div{
+            text-align: center;
+            margin-top: 6%;
+
+        }
+
+        #login_box {
+            width: 25%;
+            height: 300px;
+            margin: auto;
+            margin-top: 10%;
+            text-align: center;
+            border-radius: 10px;
+            padding: 50px 50px;
+        }
+
+
+
+
+        #input1 {
+            border: 0;
+            width: 60%;
+            font-size: 15px;
+            color: #fff;
+            background: transparent;
+            border-bottom: 2px solid #fff;
+            padding: 5px 10px;
+            outline: none;
+            margin-top: 10px;
+        }
+
+        #input2 {
+            border: 0;
+            width: 60%;
+            font-size: 15px;
+            color: #fff;
+            background: transparent;
+            border-bottom: 2px solid #fff;
+            padding: 5px 10px;
+            outline: none;
+            margin-top: 10px;
+        }
+
+        #submit {
+            margin-top: 50px;
+            width: 60%;
+            height: 30px;
+            border-radius: 10px;
+            border: 0;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            font-size: 15px;
+            background-image: linear-gradient(to right, #30cfd0, #330867);
+        }
+    </style>
+</head>
+<body >
+
+
+
+<h1 id="div">智慧农业系统管理软件</h1>
+
+<form action="login" method="post" id="login_box">
+    登录名<input type="text" name="name" id="input1"><br/>
+    密码<input type="password" name="password" id="input2"><br/>
+    <input type="submit" value="登录" id="submit">
+</form>
+
+</body>
+</html>

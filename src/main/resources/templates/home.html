@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+    body{
+
+        background: url('https://p1.itc.cn/images01/20220426/aec6272b19c844339af008f9318706ea.jpeg') no-repeat;
+        background-size: 100% 230%;
+
+    }
+
+
+    #h1{
+        text-align: center;
+        margin-top: 4%;
+    }
+</style>
+
+</head>
+<body>
+
+<h1 th:text="首页" id="h1"></h1>
+
+<a th:href="showAirTemp" style=" font-size:35px;text-decoration:none;">空气温度</a><br/>
+
+<a th:href="showAirHumi" style=" font-size:35px;text-decoration:none;">空气湿度</a><br/>
+
+<a th:href="showIllum" style=" font-size:35px;text-decoration:none;">光照强度</a><br/>
+
+<a th:href="showSoilHumi" style=" font-size:35px;text-decoration:none;">土壤相对湿度</a><br/>
+
+<a href="https://weathernew.pae.baidu.com/weathernew/pc?query=%E6%A2%85%E5%B7%9E%E8%95%89%E5%B2%AD%E5%A4%A9%E6%B0%94&srcid=4982&forecast=long_day_forecast"
+   style=" font-size:35px;text-decoration:none;">天气预报</a><br/>
+
+<a href="http://www.zghcfzw.com/" style=" font-size:35px;text-decoration:none;">害虫防治</a><br/>
+
+</body>
+</html>

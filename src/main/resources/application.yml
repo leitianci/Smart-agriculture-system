@@ -1,0 +1,19 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/
+      suffix: .jsp
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/agriculture?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+
+server:
+  port: 8080
+
+mybatis-plus:
+  type-aliases-package: com.msb.pojo
+  mapper-locations: classpath:mybatis/*.xml
