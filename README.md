@@ -6,7 +6,7 @@
 ![QQ截图20240331103400](https://github.com/leitianci/Smart-agriculture-system/assets/102131124/b4fb1726-2363-4d37-8c92-e69f701a42a6)
 
 运行这个项目时，需要安装虚拟串口、串口调试助手并打开，用串口调试助手打开COM2、4、6、8，分别模拟空气温度、空气湿度、土壤湿度、光照强度传感器。
-![QQ截图20240331004504](https://github.com/leitianci/Smart-agriculture-system/assets/102131124/4c580f2b-30b6-4204-b2cb-07be8234cb52)
+![QQ截图20240331104329](https://github.com/leitianci/Smart-agriculture-system/assets/102131124/5f1ff499-9569-4ccf-9e01-7161c36f64d3)
 ![QQ截图20240331225646](https://github.com/leitianci/Smart-agriculture-system/assets/102131124/22188f8c-31f0-4a14-b397-30f37bae601b)
 
 
